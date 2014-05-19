@@ -1,0 +1,15 @@
+COMMAND: v.in.ogr -o dsn="c:/SigTarea10/lineas1.shp" output="lineasCalles1" min_area=0.0001 snap=-1
+GISDBASE: C:/SigTarea10
+LOCATION: MiProyecto MAPSET: mapas USER: Gaby DATE: Sun May 18 20:04:12 2014
+---------------------------------------------------------------------------------
+COMMAND: v.db.addcol "lineasCalles1" "col=direccion double, velocidad double"
+GISDBASE: C:/SigTarea10
+LOCATION: MiProyecto MAPSET: mapas USER: Gaby DATE: Sun May 18 23:28:55 2014
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "lineasCalles1" "col=velcidad" "val=25" "where=cat=1"
+GISDBASE: C:/SigTarea10
+LOCATION: MiProyecto MAPSET: mapas USER: Gaby DATE: Sun May 18 23:32:25 2014
+---------------------------------------------------------------------------------
+COMMAND: v.db.update "lineasCalles1" "col=velocidad" "val=25" "where=cat=1"
+GISDBASE: C:/SigTarea10
+LOCATION: MiProyecto MAPSET: mapas USER: Gaby DATE: Sun May 18 23:32:40 2014
